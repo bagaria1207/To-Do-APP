@@ -1,10 +1,15 @@
 //Global style values
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700|Nunito:400,700');
 
-$turquoise: #44ddd0;
-$green: #27d7a1;
-$light-green: #45f69e; 
-$dark-green: rgb(0, 100, 80);
+// $turquoise: #44ddd0;
+// $green: #27d7a1;
+// $light-green: #45f69e; 
+// $dark-green: rgb(0, 100, 80);
+
+$turquoise: #151f1e;
+$green: #e69112;
+$light-green: #ecb54d; 
+$dark-green: rgb(14, 32, 29);
 
 $light: #f8f8f8;
 
@@ -47,4 +52,11 @@ html, body {
     background: white;
     border-radius: 5px;
     padding: 35px;
+}
+
+.title {
+    font-family: lato;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
