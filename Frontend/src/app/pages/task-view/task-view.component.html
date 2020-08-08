@@ -17,15 +17,19 @@
 
         <div class="task-list-container has-background-light">
             <div *ngIf="tasks">
-                <h1 class="title has-text-primary">
-                    Tasks
-                </h1>
+                <div class="top-bar">
+                    <h1 class="title has-text-primary">
+                        Tasks
+                    </h1>
+                </div>
+
 
                 <div class="task" *ngFor="let task of tasks" (click)="onTaskClick(task)"
                     [ngClass]="{ 'completed': task.completed }">
                     <p>{{ task.title }}</p>
                 </div>
-                <h3 class="empty-state-text is-4" *ngIf="tasks.length == 0">There are no Tasks Here. Please click the Plus Sign to add new Task.</h3>
+                <h3 class="empty-state-text is-4" *ngIf="tasks.length == 0">There are no Tasks Here. Please click the
+                    Plus Sign to add new Task.</h3>
 
                 <div routerLink="./new-task" class="circle-add-button button is-primary">
                     <img src="../../../assets/plus-icon.svg">
