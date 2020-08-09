@@ -18,12 +18,15 @@
                 </span>
             </p>
         </div>
+        <br>
         <div class="field is-pulled-right">
             <p class="control">
-                <button class="button is-success has-text-white" (click)="onLoginButtonClicked(emailInput.value, pwInput.value)">
+                <button class="button is-success has-text-white"
+                    (click)="onLoginButtonClicked(emailInput.value, pwInput.value)">
                     Login
                 </button>
             </p>
         </div>
+        <p class="has-text-grey">Not Got an Account? <br> <a class=" has-text-primary" routerLink="/signup">Sign up</a> Now!!</p>
     </div>
 </div>
